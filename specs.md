@@ -1,17 +1,16 @@
 *MVC METHODOLOGY*
 
 1. Data Bricks
-    - [X] generate empty db
-    - [X] draw db schema
-    - [X] generate model/table
+    - [ ] generate empty db
+    - [ ] draw db schema
+    - [ ] generate model/table
 
 2. Applicative Bricks
-    - [X] generate empty controller
+    - [ ] generate empty controller
 
-3. Silo Actions
-    - [X] Read all restaurants
-    - [X] Read one restaurant
-    - [ ] Create a restaurant
-    - [ ] Update a restaurant
-    - [ ] Delete a restaurant
-
+3. Silo Actions (route, controller, view)
+    - [ ] Read all tasks
+    - [ ] Read one task
+    - [ ] Create a task
+    - [ ] Update a task
+    - [ ] Delete a task

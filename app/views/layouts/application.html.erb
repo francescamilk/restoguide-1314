@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li><%= link_to "Home", restaurants_path %></li>
+        <li><%= link_to "Add", restaurants_new_path %></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
