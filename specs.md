@@ -6,10 +6,10 @@
     - [X] generate model/table
 
 2. Applicative Bricks
-    - [ ] generate empty controller
+    - [X] generate empty controller
 
 3. Silo Actions
-    - [ ] Read all restaurants
+    - [X] Read all restaurants
     - [ ] Read one restaurant
     - [ ] Create a restaurant
     - [ ] Update a restaurant
