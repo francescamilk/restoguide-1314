@@ -10,7 +10,7 @@
 
 3. Silo Actions
     - [X] Read all restaurants
-    - [ ] Read one restaurant
+    - [X] Read one restaurant
     - [ ] Create a restaurant
     - [ ] Update a restaurant
     - [ ] Delete a restaurant
