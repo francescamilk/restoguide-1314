@@ -24,4 +24,7 @@
 
 3. Silo Actions
     - [ ] Create a review
+        1. route
+        2. controller
+        3. view
     - [ ] Delete a review

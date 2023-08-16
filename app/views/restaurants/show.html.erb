@@ -9,5 +9,9 @@
     <div class="card">
         <h4><%= "*" * review.rating %></h4>
         <p><%= review.content %></p>
+        <%= 
+            link_to "Delete", review_path(review), 
+            data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }
+        %>
     </div>
 <% end %>
