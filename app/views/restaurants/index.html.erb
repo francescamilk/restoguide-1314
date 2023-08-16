@@ -1,7 +1,4 @@
 <h1>All Restaurants</h1>
-<ul>
-    <% @restaurants.each do |restaurant| %>
-        <%# link_to "Clickable text", destination_path %>
-        <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
-    <% end %>
-</ul>
+<%= render "list" %>
+
+<%= link_to "See top", top_restaurants_path %>

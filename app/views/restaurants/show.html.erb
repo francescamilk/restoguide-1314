@@ -1,2 +1,13 @@
 <h1>Details about <%= @restaurant.name %></h1>
 <p>Address: <%= @restaurant.address %></p>
+
+<%= link_to "See chef", chef_restaurant_path(@restaurant) %>
+<%= link_to "Back to all", restaurants_path %>
+
+<h3>Reviews</h3>
+<% @reviews.each do |review| %>
+    <div class="card">
+        <h4><%= "*" * review.rating %></h4>
+        <p><%= review.content %></p>
+    </div>
+<% end %>

@@ -4,10 +4,18 @@ class RestaurantsController < ApplicationController
         @restaurants = Restaurant.all
     end
 
+    def top
+        @restaurants = Restaurant.where(rating: 5)
+    end
+
     def show
         # find the restaurant by id
-        id = params[:id]
-        @restaurant = Restaurant.find(id)
+        @restaurant = Restaurant.find(params[:id])
+        @reviews    = @restaurant.reviews
+    end
+
+    def chef
+        @restaurant = Restaurant.find(params[:id])
     end
 
     def new

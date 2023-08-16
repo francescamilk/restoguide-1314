@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
-  get 'restaurants/new', to: 'restaurants#new', as: :new_restaurant
-  post 'restaurants', to: 'restaurants#create'
-  
-  # Read (all)
-  # GET localhost:3000/restaurants
-  get 'restaurants', to: 'restaurants#index'
+    resources :restaurants do
 
-  # Read (one)
-  # GET localhost:3000/restaurants/1
-  # GET localhost:3000/restaurants/4
-  get 'restaurants/:id', to: 'restaurants#show', as: :restaurant
+        collection do
+            # Custom index (read all with filters)
+            # get 'restaurants/top', to: 'restaurants#top'
+            get 'top'
+        end
 
+        member do
+            # Custom show (read one - custom)
+            # get 'restaurants/:id/chef', to: 'restaurants#chef'
+            get 'chef'
+        end
+    end
 end
